@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#social-media">Social Media</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="profile">
+        <h2>My Main Profile</h2>
+        <img src="profile.jpg" alt="Profile Picture" id="profile-pic">
+        <p>Hello! I am <strong>Gopal Jha</strong>, a <strong>Web Developer</strong>. Welcome to my portfolio.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor's Degree in BCA - SDJ International College - 2025</li>
+            
+        </ul>
+    </section>
+
+    <section id="social-media">
+        <h2>Social Media</h2>
+        <ul>
+            <li><a href="https://github.com/igopalji/" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/gopal-ji-195a262aa/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://instagram.com/igopalji/" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/igopalji/CrowdTrackr/" target="_blank">CrowdTrackr</a> - Description of project 1. Precision crowd counting and data management for optimized crowd control. Real-time insights. Effortless efficiency."</li>
+        </ul>
+    </section>
+
+    
+    <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+                <p id="form-message"></p>
+            </form>
+        </section>
+        
+    
+    <script src="scrt.js"></script>
+</body>
+</html>
