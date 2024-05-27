@@ -70,7 +70,7 @@ nav ul li a:hover {
 main {
     margin-top: 60px; /* Adjusted for the header */
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px; /* Added max-width for better responsiveness */
 }
 
 section {
@@ -80,7 +80,8 @@ section {
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-    width: 80vh;
+    width: 100%; /* Ensure section width is 100% */
+    max-width: 800px; /* Added max-width for better responsiveness */
 }
 
 section:hover {
@@ -128,6 +129,17 @@ ul li a:hover {
     color: #00796B;
 }
 
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #00BCD4;
+    color: white;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 
 form {
     display: flex;
@@ -168,3 +180,50 @@ form button:hover {
     color: #e73c3c;
 }
 
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    main {
+        width: 95%;
+    }
+    section {
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+    }
+    ul {
+        max-width: 100%;
+    }
+    form input, form textarea {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 0;
+    }
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0.25rem 0.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    #profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    form button {
+        padding: 0.5rem 1rem;
+    }
+    form input, form textarea {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+}
