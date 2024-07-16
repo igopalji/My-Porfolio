@@ -7,6 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh; /* Ensures body takes up full height */
+    box-sizing: border-box;
 }
 
 header {
@@ -16,7 +18,7 @@ header {
     width: 100%;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: fixed; /* Fixes header at the top */
     top: 0;
     z-index: 1000;
     animation: slideDown 0.5s ease-in-out;
@@ -36,7 +38,8 @@ nav {
     padding: 1rem;
     width: 100%;
     text-align: center;
-    position: relative;
+    position: fixed; /* Fixes nav below header */
+    top: 60px; /* Adjusts for fixed header height */
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -48,10 +51,11 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0.5rem; /* Adjusted for better spacing */
 }
 
 nav ul li a {
@@ -68,9 +72,14 @@ nav ul li a:hover {
 }
 
 main {
-    margin-top: 60px; /* Adjusted for the header */
+    margin-top: 120px; /* Adjusted for fixed header and nav */
     width: 90%;
-    max-width: 1200px; /* Added max-width for better responsiveness */
+    max-width: 1200px;
+    flex: 1; /* Ensures main takes available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 section {
@@ -80,8 +89,8 @@ section {
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-    width: 100%; /* Ensure section width is 100% */
-    max-width: 800px; /* Added max-width for better responsiveness */
+    width: 100%;
+    max-width: 800px;
 }
 
 section:hover {
@@ -136,9 +145,10 @@ footer {
     color: white;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: fixed; /* Fixes footer at the bottom */
     bottom: 0;
     left: 0;
+    z-index: 1000;
 }
 
 form {
@@ -159,6 +169,7 @@ form input, form textarea {
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 form button {
