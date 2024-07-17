@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Ensures body takes up full height */
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@ header {
     width: 100%;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Fixes header at the top */
+    position: fixed;
     top: 0;
     z-index: 1000;
     animation: slideDown 0.5s ease-in-out;
@@ -38,8 +38,8 @@ nav {
     padding: 1rem;
     width: 100%;
     text-align: center;
-    position: fixed; /* Fixes nav below header */
-    top: 60px; /* Adjusts for fixed header height */
+    position: fixed;
+    top: 60px;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -51,11 +51,11 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0.5rem; /* Adjusted for better spacing */
+    margin: 0.5rem;
 }
 
 nav ul li a {
@@ -72,10 +72,10 @@ nav ul li a:hover {
 }
 
 main {
-    margin-top: 120px; /* Adjusted for fixed header and nav */
+    margin-top: 120px;
     width: 90%;
     max-width: 1200px;
-    flex: 1; /* Ensures main takes available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,50 +145,10 @@ footer {
     color: white;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Fixes footer at the bottom */
+    position: fixed;
     bottom: 0;
     left: 0;
     z-index: 1000;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-form label {
-    margin: 0.5rem 0 0.25rem 0;
-}
-
-form input, form textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-form button {
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #00BCD4;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: #00796B;
-}
-
-#form-message {
-    margin-top: 1rem;
-    color: #e73c3c;
 }
 
 /* Media Queries for Responsiveness */
@@ -210,9 +170,6 @@ form button:hover {
     ul {
         max-width: 100%;
     }
-    form input, form textarea {
-        max-width: 100%;
-    }
 }
 
 @media (max-width: 480px) {
@@ -229,12 +186,5 @@ form button:hover {
     #profile-pic {
         width: 100px;
         height: 100px;
-    }
-    form button {
-        padding: 0.5rem 1rem;
-    }
-    form input, form textarea {
-        font-size: 0.9rem;
-        padding: 0.4rem;
     }
 }
