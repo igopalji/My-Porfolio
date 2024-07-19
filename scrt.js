@@ -6,3 +6,14 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('nav').classList.toggle('hidden');
+});
+
+document.querySelectorAll('.expand-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const section = button.closest('section');
+        section.classList.toggle('expand');
+    });
+});

@@ -8,10 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <div class="header-content">
+            <h1>Gopal Jha</h1>
+            <p>Web Developer</p>
+        </div>
+        <button class="menu-toggle">☰</button>
     </header>
 
-    <nav>
+    <nav class="hidden">
         <ul>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#education">Education</a></li>
@@ -22,47 +26,62 @@
         </ul>
     </nav>
 
-    <section id="profile">
-        <h2>My Main Profile</h2>
-        <img src="profile.jpg" alt="Profile Picture" id="profile-pic">
-        <p>Hello! I am <strong>Gopal Jha</strong>, a <strong>Web Developer</strong>. Welcome to my portfolio.</p>
-    </section>
+    <main>
+        <section id="profile">
+            <h2>My Main Profile</h2>
+            <img src="profile.jpg" alt="Profile Picture" id="profile-pic">
+            <p>Hello! I am <strong>Gopal Jha</strong>, a <strong>Web Developer</strong>. Welcome to my portfolio.</p>
+            <button class="expand-btn">Read More</button>
+            <div class="extra-content">
+                <p>This is the expanded content about the profile. It includes more details about my skills, interests, and background.</p>
+            </div>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor's Degree in BCA - SDJ International College - 2025</li>
-        </ul>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor's Degree in BCA - SDJ International College - 2025</li>
+            </ul>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>Intern at XYZ Company - June 2023 to August 2023</li>
-            <li>Freelance Web Developer - January 2024 to Present</li>
-        </ul>
-    </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>Intern at XYZ Company - June 2023 to August 2023</li>
+                <li>Freelance Web Developer - January 2024 to Present</li>
+            </ul>
+        </section>
 
-    <section id="social-media">
-        <h2>Social Media</h2>
-        <ul>
-            <li><a href="https://github.com/igopalji/" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/gopal-ji-195a262aa/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://instagram.com/igopalji/" target="_blank">Instagram</a></li>
-        </ul>
-    </section>
+        <section id="social-media">
+            <h2>Social Media</h2>
+            <ul>
+                <li><a href="https://github.com/igopalji/" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/gopal-ji-195a262aa/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://instagram.com/igopalji/" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/igopalji/CrowdTrackr/" target="_blank">CrowdTrackr</a> - Precision crowd counting and data management for optimized crowd control. Real-time insights. Effortless efficiency.</li>
-        </ul>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/igopalji/CrowdTrackr/" target="_blank">CrowdTrackr</a> - Precision crowd counting and data management for optimized crowd control. Real-time insights. Effortless efficiency.</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
 
     <script src="scrt.js"></script>
 </body>
